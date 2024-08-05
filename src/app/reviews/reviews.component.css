@@ -1,0 +1,26 @@
+.review {
+  font-family: "Belinda", cursive;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+}
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-sec {
+  padding: 10px;
+  border-block: 5px solid deepskyblue;
+  background-color: deepskyblue;
+}
+#star {
+  color: gold;
+  font-size: 24px;
+}
+#name {
+  font-size: 20px;
+  font-weight: bold;
+}

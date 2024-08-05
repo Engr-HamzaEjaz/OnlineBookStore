@@ -1,0 +1,14 @@
+.aboutus {
+  width: 50%;
+  background-color: lightblue;
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.mission {
+  width: 50%;
+  background-color: rgb(133, 204, 228);
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px 20px;
+}

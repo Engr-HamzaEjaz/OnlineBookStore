@@ -1,0 +1,65 @@
+<!-- <section class="center">
+  <h2 class="quote">
+    "A reader lives a thousand lives before he dies. The man who never reads
+    lives only one". (George R.R. Martin)
+  </h2>
+</section>
+<h1 class="center">Available Books</h1>
+<section id="book-container">
+  @for (item of books; track $index) {
+  <section class="book-item">
+    <section class="book-img">
+      <img src="images/person1.jpg" alt="{{ item.title }}" />
+    </section>
+    <section class="book-detail">
+      <section>
+        <h1>{{ item.title }}</h1>
+        <p style="margin: 0px"><strong>Author:</strong> {{ item.author }}</p>
+        <p><strong>ID:</strong> {{ item.id }}</p>
+        <p style="margin-top: 0px">{{ item.description }}</p>
+        <a href="abc" id="buy" style="background-color: white">Place Order</a>
+      </section>
+    </section>
+  </section>
+  }
+</section>
+<section class="center">
+  <form>
+    <button type="button" id="load">Load More Books</button>
+  </form>
+</section> -->
+
+<section class="center">
+  <h2 class="quote">
+    "A reader lives a thousand lives before he dies. The man who never reads
+    lives only one". (George R.R. Martin)
+  </h2>
+</section>
+<h1 class="center">Available Books</h1>
+<section id="book-container">
+  <section *ngFor="let item of displayedBooks; let i = index" class="book-item">
+    <section class="book-img">
+      <img [src]="item.img" alt="{{ item.name }}" />
+    </section>
+    <section class="book-detail">
+      <section>
+        <p><strong>{{ item.title }}</strong></p>
+        <p style="margin: 0px"><strong>Author:</strong> {{ item.author }}</p>
+        <p><strong>ID:</strong> {{ item.id }}</p>
+        <p style="margin-top: 0px">{{ item.description }}</p>
+        <a href="abc" id="buy" style="background-color: white">Buy Now</a>
+      </section>
+    </section>
+  </section>
+</section>
+
+<section class="center">
+
+  <form>
+    <button type="button" id="load" (click)="loadMoreBooks()">
+      Load More Books
+    </button>
+  </form>
+  
+
+</section>

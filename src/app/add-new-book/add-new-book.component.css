@@ -1,0 +1,26 @@
+form {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.horizontal label {
+  display: flex;
+  width: 100px;
+  font-weight: bold;
+  padding-right: 10px;
+  align-items: center;
+}
+.horizontal input {
+  flex: 1;
+  padding: 10px;
+  padding-left: 10px;
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.img {
+  padding: 10px;
+  justify-content: center;
+  object-fit: cover;
+}

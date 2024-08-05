@@ -1,0 +1,76 @@
+<section>
+  <h2 class="center">Add New Book</h2>
+  <section class="hfix" style="margin-top: 15px">
+    <section style="padding-right: 20px">
+      <img src="assets/booklogoR.jpg" class="img" />
+    </section>
+    <section class="center">
+      <form id="add-book" class="vertical" (submit)="onSubmit($event)">
+        <section class="horizontal" style="padding: 10px 0px 0px 0px">
+          <label for="Bid"> Book ID </label>
+          <input
+            type="text"
+            id="Bid"
+            name="Bid"
+            [(ngModel)]="bookData.Bid"
+            placeholder="ID of Book"
+            required
+          />
+        </section>
+        <section class="horizontal" style="padding: 10px 0px 0px 0px">
+          <label for="Bname"> Book Title </label>
+          <input
+            type="text"
+            id="Bname"
+            name="Bname"
+            [(ngModel)]="bookData.Bname"
+            placeholder="Title of Book"
+            required
+          />
+        </section>
+        <section class="horizontal" style="padding: 10px 0px 0px 0px">
+          <label for="Bauthor"> Book Author </label>
+          <input
+            type="text"
+            id="Bauthor"
+            name="Bauthor"
+            [(ngModel)]="bookData.Bauthor"
+            placeholder="Name of Author"
+            required
+          />
+        </section>
+        <section class="horizontal" style="padding: 10px 0px 0px 0px">
+          <label for="Bdescription"> Description </label>
+          <input
+            type="text"
+            id="Bdescription"
+            name="Bdescription"
+            [(ngModel)]="bookData.Bdescription"
+            placeholder="Description"
+            required
+          />
+        </section>
+        <section class="horizontal" style="padding: 10px 0px 0px 0px">
+          <label for="Bimg"> Cover Picture </label>
+          <input
+            type="text"
+            id="Bimg"
+            name="Bimg"
+            [(ngModel)]="bookData.Bimg"
+            placeholder="Image URL"
+            required
+          />
+        </section>
+        <section class="center" style="padding-top: 20px">
+          <button type="submit" style="font-size: 18px">
+            SUBMIT
+          </button>
+        </section>
+      </form>
+    </section>
+    <section style="padding-right: 20px">
+      <img src="assets/booklogoL.jpg" class="img" />
+    </section>
+  </section>
+</section>
+<br />

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hfix {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+#buy {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+#buy:hover {
+  cursor: pointer;
+  color: red;
+}
