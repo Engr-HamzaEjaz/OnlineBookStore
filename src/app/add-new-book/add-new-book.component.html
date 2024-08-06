@@ -5,58 +5,57 @@
       <img src="assets/booklogoR.jpg" class="img" />
     </section>
     <section class="center">
-      <form id="add-book" class="vertical" (submit)="onSubmit($event)">
+      <form (ngSubmit)="onSubmit()" id="add-book" class="vertical">
         <section class="horizontal" style="padding: 10px 0px 0px 0px">
-          <label for="Bid"> Book ID </label>
+          <label for="Bid">Book ID</label>
           <input
-            type="text"
+            type="number"
             id="Bid"
+            [(ngModel)]="book.id"
             name="Bid"
-            [(ngModel)]="bookData.Bid"
             placeholder="ID of Book"
             required
           />
         </section>
         <section class="horizontal" style="padding: 10px 0px 0px 0px">
-          <label for="Bname"> Book Title </label>
+          <label for="Bname">Book Title</label>
           <input
             type="text"
             id="Bname"
+            [(ngModel)]="book.title"
             name="Bname"
-            [(ngModel)]="bookData.Bname"
             placeholder="Title of Book"
             required
           />
         </section>
         <section class="horizontal" style="padding: 10px 0px 0px 0px">
-          <label for="Bauthor"> Book Author </label>
+          <label for="Bauthor">Book Author</label>
           <input
             type="text"
             id="Bauthor"
+            [(ngModel)]="book.author"
             name="Bauthor"
-            [(ngModel)]="bookData.Bauthor"
             placeholder="Name of Author"
             required
           />
         </section>
         <section class="horizontal" style="padding: 10px 0px 0px 0px">
-          <label for="Bdescription"> Description </label>
+          <label for="Bdescription">Description</label>
           <input
-            type="text"
             id="Bdescription"
+            [(ngModel)]="book.description"
             name="Bdescription"
-            [(ngModel)]="bookData.Bdescription"
             placeholder="Description"
             required
           />
         </section>
         <section class="horizontal" style="padding: 10px 0px 0px 0px">
-          <label for="Bimg"> Cover Picture </label>
+          <label for="Bimg">Cover Picture</label>
           <input
             type="text"
             id="Bimg"
+            [(ngModel)]="book.img"
             name="Bimg"
-            [(ngModel)]="bookData.Bimg"
             placeholder="Image URL"
             required
           />

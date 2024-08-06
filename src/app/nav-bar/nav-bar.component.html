@@ -7,17 +7,18 @@
     </section>
     <section style="padding: 10px 30px 10px 10px">
       <form>
-        <label for="gsearch" style="font-size: 26px; padding: 0px 10px"
-          >Search:</label
-        >
+        <label for="gsearch" style="font-size: 26px; padding: 0px 10px">Search:</label>
         <input
           type="search"
           id="search-bar"
           name="gsearch"
-          placeholder="Enter Book Name ... "
+          [(ngModel)]="searchQuery"
+          (ngModelChange)="onSearchChange($event)"
+          placeholder="Enter Book Name ..."
           class="search"
         />
       </form>
     </section>
   </section>
 </nav>
+

@@ -8,7 +8,7 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
-import { AddBookComponent } from './add-new-book/add-new-book.component';
+import { AddNewBookComponent } from './add-new-book/add-new-book.component';
 
 @Component({
   selector: 'app-root',
@@ -22,9 +22,9 @@ import { AddBookComponent } from './add-new-book/add-new-book.component';
     ComingsoonComponent,
     AboutusComponent,
     NewsletterComponent,
-    AddBookComponent,
     FooterComponent,
-  ],
+    AddNewBookComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
