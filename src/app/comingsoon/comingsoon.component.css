@@ -20,7 +20,7 @@ td {
   font-size: 18px;
 }
 tr:hover {
-  background-color: violet;
+  background-color: skyblue;
 }
 tr:nth-child(odd) {
   background-color: #d6eeee;

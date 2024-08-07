@@ -1,9 +1,15 @@
+
+.reviewbox{
+  background-color: dodgerblue;
+  padding: 10px 20px;
+}
 .review {
   font-family: "Belinda", cursive;
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
   padding: 10px;
+  text-align: justify;
 }
 .round-image {
   width: 200px;
